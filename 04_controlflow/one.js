@@ -71,7 +71,7 @@ const loggedinfromemail = false
 
 
 if (userLoggedin && debitcard) {
-    console.log("allow to buy product");
+    console.log("allow to buy product");    
     
     
 }
@@ -80,3 +80,4 @@ if (loggedinfromgoogle || loggedinfromemail) {
     
     
 }
+//  &&  everything must true||  here one must true , all are   logical operators
