@@ -57,7 +57,7 @@ const myGames = {
 //     console.log(key,':-',value);
     
     
-// }    //it will not gonna work
+// }    //it will not gonna work for loop not work for obj mainly we used for for in loop
 
 
 
