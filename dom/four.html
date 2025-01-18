@@ -12,5 +12,41 @@
 </body>
 <script>
     
+function addlanguage (langname){
+
+    const li = document.createElement('li');
+    li.innerHTML = `${langname}`
+    document.querySelector('.language').
+    appendChild(li)
+}
+addlanguage ('typescript')
+addlanguage ('python')
+  
+//better aproach for optimize tried not to use innerhtml
+function optlanguage(langname) {
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+    
+}
+optlanguage('sunnyleone')
+
+
+//how we can edit lets see
+const secndlang = document.querySelector("li:nth-child(2)")
+// secndlang.innerHTML = 'mojo'
+const newli = document.createElement("li")
+newli.textContent = "sunny"
+secndlang.replaceWith(newli)
+//new way to edit
+const firstlang = document.querySelector('li:first-child')
+firstlang.outerHTML = '<li>typu</li>'
+//remove
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+
+
+
 </script>
 </html>
